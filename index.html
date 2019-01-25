@@ -21,32 +21,31 @@
         <h4>Check the availabilities and book your hotel for the trip</h4>
 
         <div class="row m-3">
-            <form>
-                <div class="form-row">
-                    <div class="col">
-                        <p>Select a start date:</p>
-                        <input type="date" name="calendar" class="form-control">
-                    </div>
-                    <div class="col">
-                        <p>Select number of days:</p>
-                        <input type="number" name="days" class="form-control">
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-dark mt-3">Check!</button>
-            </form>
+            <div class="col">
+                <p>Select a start date:</p>
+                <input type="date" id="calendar" class="form-control">
+            </div>
+            <div class="col">
+                <p>Select number of days:</p>
+                <input type="number" id="number" class="form-control">
+            </div>
+            <div class="col">
+                <p>Select language:</p>
+                <select class="custom-select" id="language">
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row m-3">
+            <button onclick="checkAvailability()" class="btn btn-dark m-3">Check!</button>
+        </div>
+
+        <div class="row m-3" id="eachDay">
         </div>
 
         <div class="row m-3" id="dataHotel">
-            <table class="table">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Days selected</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr id="eachDay"></tr>
-                </tbody>
-            </table>
         </div>
     </div>
 

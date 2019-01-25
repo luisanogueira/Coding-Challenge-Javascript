@@ -2,3 +2,11 @@
     background-color: darkcyan;
     color: antiquewhite;
 }
+
+.card {
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
